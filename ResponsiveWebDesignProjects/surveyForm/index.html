@@ -8,12 +8,16 @@
   </head>
   <body>
     <div id="main">
-      <h1 id="title">FreeCode Camp Survey By H.K. Mahat</h1>
-      <p id="description">Thank you for taking the time to help us improve</p>
+      <header>
+        <h1 id="title">FreeCode Camp Survey By H.K. Mahat</h1>
+        <p id="description">Thank you for taking the time to help us improve</p>
+      </header>
+
       <form action="" id="survey-form">
         <div class="form-group">
           <label for="name" id="name-label">Name</label> <br />
           <input
+            class="form-control"
             type="text"
             id="name"
             name="name"
@@ -25,6 +29,7 @@
         <div class="form-group">
           <label for="email" id="email-label">Email</label><br />
           <input
+            class="form-control"
             type="email"
             id="email"
             name="email"
@@ -37,6 +42,7 @@
         <div class="form-group">
           <label for="age" id="number-label">Age</label><br />
           <input
+            class="form-control"
             type="number"
             id="number"
             name="age"
@@ -47,13 +53,13 @@
         </div>
 
         <!-- Drop down Label -->
-        <div>
-          <p for="current_role">
+        <div class="form-group">
+          <p>
             Which option best describes your current Role
           </p>
 
           <!-- Drop down options -->
-          <select id="dropdown" name="current_role">
+          <select id="dropdown" name="current_role" class="form-control">
             <option value="default">Select your role</option>
             <option value="Student">Student</option>
             <option value="Full Time Job">Full Time Job</option>
@@ -69,27 +75,42 @@
             Would you recommend freeCodeCamp to a friend?
           </p>
           <label for="recomend">
-            <input type="radio" name="recomend" id="recomend" />
+            <input
+              class="input-radio"
+              type="radio"
+              name="recomend"
+              id="recomend"
+            />
             Definitely
           </label>
           <br />
           <label for="recomend">
-            <input type="radio" name="recomend" id="recomend" />
+            <input
+              class="input-radio"
+              type="radio"
+              name="recomend"
+              id="recomend"
+            />
             MayBe
           </label>
           <br />
           <label for="recomend">
-            <input type="radio" name="recomend" id="recomend" />
+            <input
+              class="input-radio"
+              type="radio"
+              name="recomend"
+              id="recomend"
+            />
             Not Sure
           </label>
         </div>
 
         <div class="form-group">
-          <p for="feature">
+          <p>
             What is your favorite feature of freeCodeCamp ?
           </p>
 
-          <select name="feature" id="feature-dropdown">
+          <select name="feature" id="feature-dropdown" class="form-control">
             <option value="default">Select an option</option>
             <option value="challenges">Challenges</option>
             <option value="projects">Projects</option>
@@ -206,9 +227,15 @@
           <textarea
             name="comments"
             id="comments"
-            cols="60"
-            rows="20"
+            cols="40"
+            rows="10"
+            class="input-textarea"
           ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
         </div>
       </form>
     </div>
